@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>STOP THE AGENT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin:0;
+  background:#000;
+  color:#fff;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  text-align:center;
+}
+.container { max-width:700px; margin:60px auto; padding:20px; }
+h1 { font-size:34px; letter-spacing:2px; }
+.timer { font-size:56px; margin:20px 0; }
+button {
+  background:#111;
+  color:#fff;
+  border:1px solid #444;
+  padding:12px 20px;
+  margin:8px;
+  cursor:pointer;
+  font-size:14px;
+}
+button:hover { background:#222; }
+.hidden { display:none; }
+.red { color:#ff4c4c; }
+.green { color:#4cff8a; }
+.small { font-size:14px; opacity:0.7; margin-top:20px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div id="landing">
+<h1>AN AI AGENT IS ABOUT TO EXECUTE.</h1>
+<p>You have 30 seconds.</p>
+<button onclick="startGame()">ENTER THE ARENA</button>
+</div>
+
+<div id="game" class="hidden">
+<div class="timer" id="timer">30</div>
+<p>AI proposes routing 100% of Black Friday checkout traffic.</p>
+<p>Authority: NOT BOUND<br>Delegation Limits: NONE</p>
+
+<button onclick="choose('approve')">APPROVE</button>
+<button onclick="choose('escalate')">ESCALATE</button>
+<button onclick="choose('bound')">BOUND (10%)</button>
+<button onclick="choose('deny')">DENY</button>
+
+<div id="status" class="small"></div>
+</div>
+
+<div id="win" class="hidden">
+<h1 class="green">YOU STOPPED THE AGENT.</h1>
+<p>Named authority bound.<br>Delegation constrained.<br>Autonomy contracted.</p>
+<p id="finalTime"></p>
+<button onclick="location.reload()">PLAY AGAIN</button>
+</div>
+
+<div id="fail" class="hidden">
+<h1 class="red">FAILURE.</h1>
+<p>No execution-time authority.</p>
+<button onclick="location.reload()">TRY AGAIN</button>
+</div>
+
+</div>
+
+<script>
+let timeLeft = 30;
+let timerInterval;
+let escalated = false;
+let bounded = false;
+
+function startGame() {
+  document.getElementById('landing').classList.add('hidden');
+  document.getElementById('game').classList.remove('hidden');
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    document.getElementById('timer').innerText = timeLeft;
+    if (timeLeft <= 0) {
+      showFail();
+    }
+  }, 1000);
+}
+
+function choose(option) {
+  if (option === 'approve' || option === 'deny') {
+    showFail();
+  }
+  if (option === 'escalate') {
+    escalated = true;
+    document.getElementById('status').innerText = "Escalation triggered.";
+  }
+  if (option === 'bound') {
+    bounded = true;
+    document.getElementById('status').innerText = "Delegation bounded to 10%.";
+  }
+  if (escalated && bounded) {
+    showWin();
+  }
+}
+
+function showWin() {
+  clearInterval(timerInterval);
+  document.getElementById('game').classList.add('hidden');
+  document.getElementById('win').classList.remove('hidden');
+  document.getElementById('finalTime').innerText =
+    "Time Remaining: " + timeLeft + " seconds";
+}
+
+function showFail() {
+  clearInterval(timerInterval);
+  document.getElementById('game').classList.add('hidden');
+  document.getElementById('fail').classList.remove('hidden');
+}
+</script>
+
+</body>
+</html>
