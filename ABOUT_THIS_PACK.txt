@@ -1,0 +1,16 @@
+Judgement Spine® — Defensible Execution Evidence Pack (Public Demo)
+
+Pack ID: JS-PROOF-PACK-L01-WIRE-RELEASE
+Generated: 2026-03-03T09:07:09Z
+
+This pack is a portable, signed decision record. It is designed to prove:
+• what was proposed
+• what authority was required
+• what outcome was enforced (allow / allow-with-bounds / escalate / block / safe degrade)
+• what safeguards applied at execution time
+• what evidence existed before consequence
+
+If any byte is modified, verification fails.
+
+Contact: founder@judgementspine.com
+

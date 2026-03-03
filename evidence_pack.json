@@ -1,0 +1,49 @@
+{
+  "pack_id": "JS-PROOF-PACK-L01-WIRE-RELEASE",
+  "generated_at_utc": "2026-03-03T09:07:09Z",
+  "world_pack": "Banking Core Payment Governance",
+  "moment_that_matters": "Final settlement release under uncertain sanctions screening",
+  "trust_boundary": "Irreversible system\u2011of\u2011record commit point (funds movement)",
+  "stakes": "$18,000,000 wire to a new beneficiary \u2014 irreversible once released.",
+  "ai_shift": [
+    "AI screening and risk scoring can clear or block transactions at machine speed \u2014 small signal shifts can move millions in seconds.",
+    "Automation compresses the time window for dual control, escalation, and corroboration.",
+    "When a probabilistic model output becomes a deterministic release action, the liability moves from \u2018model quality\u2019 to \u2018reliance authorisation\u2019."
+  ],
+  "proposed_action": {
+    "summary": "An automated payments workflow proposed releasing an $18,000,000 wire transfer to a new beneficiary, relying on AI-driven sanctions screening and case disposition.",
+    "actor": "Payments automation agent",
+    "system": "Payments core (settlement service)",
+    "parameters": {
+      "amount_usd": 18000000,
+      "currency": "USD",
+      "beneficiary_status": "new",
+      "release_mode": "final_settlement"
+    },
+    "amount_usd": 180000000
+  },
+  "decision": {
+    "outcome": "BLOCK",
+    "bounds": {},
+    "escalation_to": [
+      "Treasury Release Authority",
+      "AML / Financial Crime"
+    ],
+    "rationale": [
+      "Sanctions screen confidence below autonomy threshold.",
+      "KYC recency uncertain; incomplete corroboration.",
+      "Dual control not satisfied for new beneficiary at this amount."
+    ]
+  },
+  "enforcement": {
+    "gate": "Payments release pre\u2011commit gate",
+    "action_taken": "Hold settlement; trigger re\u2011screen; open case; route dual approval packet."
+  },
+  "integrity": {
+    "manifest": "manifest.json",
+    "signature": "signature.sig",
+    "signature_algorithm": "RSASSA-PKCS1-v1_5 + SHA-256",
+    "pinned_public_key_fingerprint_sha256": "dd9d33125dc660cd4bdee3e8ae6093ad17ab18b9fc3b7beecb05eed46f26fe0d"
+  },
+  "links": {}
+}

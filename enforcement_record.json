@@ -1,0 +1,11 @@
+{
+  "enforcement_id": "ENF-L01-0001",
+  "timestamp_utc": "2026-03-03T09:07:09Z",
+  "enforcement_action": "BLOCK",
+  "applied_controls": [
+    "Release commit prevented at pre‑commit gate",
+    "Re‑screening triggered with updated sources",
+    "Case opened and routed to Treasury + AML dual control",
+    "All artefacts hash‑chained for audit"
+  ]
+}

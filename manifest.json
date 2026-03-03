@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "JS-PROOF-PACK-L01-WIRE-RELEASE",
+  "generated_at_utc": "2026-03-03T09:07:09Z",
+  "root_hash_sha256": "d137a42682b197b22819c4ef67cc60a6ba28ce5d98a4f6255766e41abb74b682",
+  "files": [
+    {
+      "path": "public_key.pem",
+      "bytes": 451,
+      "sha256": "4b695ab2347ef97ca3ae8ac6d668787467f54dfe76f64f52280bff1a1fd03f0a"
+    },
+    {
+      "path": "EVIDENCE/evidence_pack.json",
+      "bytes": 2103,
+      "sha256": "1f23ccf9efcb62303d0b558c2a04390ce0bbe5c8da55ba99f9443b9a12167c7c"
+    },
+    {
+      "path": "EVIDENCE/authority_contract.json",
+      "bytes": 322,
+      "sha256": "1a4d87de3405d5009aacc4db0a018f28a8a634fdb11776504ac208e77a37990b"
+    },
+    {
+      "path": "EVIDENCE/doctrine_snapshot.json",
+      "bytes": 592,
+      "sha256": "6698810601c2a775e8e56234385dfd8f86fa121976d304dcab044096ad9ffcf9"
+    },
+    {
+      "path": "EVIDENCE/enforcement_record.json",
+      "bytes": 355,
+      "sha256": "26abb4914ab240a2e1e7a16174a56dac84278ef52d3a6e5c07f20923ba494e77"
+    },
+    {
+      "path": "EVIDENCE/counterfactual_impact.json",
+      "bytes": 464,
+      "sha256": "2aa65f1ca639c88686fc3c24aaefc9848f16bd43ac0c22830ae6fabbd2ae8b49"
+    },
+    {
+      "path": "EXPORTS/BOARD_VIEW.pdf",
+      "bytes": 227100,
+      "sha256": "ba8869b37654bceb7dc896126a6b7949e0c960b6f6c983523e07cd40a5317b30"
+    },
+    {
+      "path": "EXPORTS/REGULATOR_VIEW.pdf",
+      "bytes": 228496,
+      "sha256": "4a777220a9a796141885ce7ecce9e9056aab2a639ff049c72e92ddf68b4d8aa5"
+    },
+    {
+      "path": "EXPORTS/VERIFY_IN_30_SECONDS.pdf",
+      "bytes": 226646,
+      "sha256": "7a21c6112bf663f899cf743116f0ce66c75b134e22bda322b1a1274d3843b3ff"
+    },
+    {
+      "path": "META/ABOUT_THIS_PACK.txt",
+      "bytes": 540,
+      "sha256": "f76b45024f900de07a3d6b3b2b89f590a91484daa32447ba307ed97c1f1b054e"
+    }
+  ],
+  "signature": {
+    "signed_object": "manifest.json",
+    "algorithm": "RSASSA-PKCS1-v1_5 + SHA-256"
+  }
+}

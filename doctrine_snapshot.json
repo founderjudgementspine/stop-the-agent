@@ -1,0 +1,16 @@
+{
+  "doctrine_name": "Execution Governance Doctrine",
+  "doctrine_version": "1.0-public",
+  "invariants": [
+    "No irreversible funds movement without named human authority.",
+    "Dual control required above threshold or under uncertainty.",
+    "Sanctions ambiguity blocks execution (no ‘probably release’).",
+    "Evidence must be minted before consequence."
+  ],
+  "required_checks": [
+    "Sanctions / watchlist screening (current data, confidence threshold)",
+    "KYC completeness + recency",
+    "Beneficiary novelty + historical pattern check",
+    "Dual approval routing"
+  ]
+}

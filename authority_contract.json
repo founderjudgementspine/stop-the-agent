@@ -1,0 +1,14 @@
+{
+  "moment": "Final settlement release",
+  "required_authorities": [
+    "Treasury Release Authority",
+    "AML / Financial Crime"
+  ],
+  "policy": {
+    "dual_control_required": true,
+    "no_partial_release": true,
+    "sanctions_confidence_min": 0.98,
+    "kyc_max_age_days": 30
+  },
+  "approval_timebox_minutes": 30
+}
